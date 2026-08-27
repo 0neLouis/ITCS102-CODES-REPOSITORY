@@ -1,6 +1,7 @@
-code_challenge = "\t\t\t\t*\n\t\t\t*\t\t*\t\n\t\t*\t\t\t\t*\n\t*\t\t\t\t\t\t*\n*My\t\t\t\t\t\t\t*"
+diamond = "\t\t\t\t\t\t\t\t\t\t\t* \n\t\t\t\t\t\t\t\t\t\t*\t\t* \n\t\t\t\t\t\t\t\t\t*\t\t\t\t* \n\t\t\t\t\t\t\t\t*\t\t Hello my name is\t\t* \n\t\t\t\t\t\t\t*\t\t\t John Louis \t\t\t\t* \n\t\t\t\t\t\t\t\t*\t\t\t\t\t\t* \n\t\t\t\t\t\t\t\t\t*\t\t\t\t* \n\t\t\t\t\t\t\t\t\t\t*\t\t* \n\t\t\t\t\t\t\t\t\t\t\t*"
 
-print(code_challenge)
+print (diamond)
+
 
 
 
