@@ -2,40 +2,40 @@
 
 name = input("Name of sender -->")
 type = input("What kind of product? -->")
-
-is_Fragile = bool(input(" is your Item fragile? -->"))
+is_Fragile = bool(eval(input(" is your Item fragile? -->")))
 weight = float(input("How much does it weight -->"))
 distance = float(input("How far is the shipping place? -->"))
-is_Expresseed = bool(input("Is it by express? -->"))
-is_International = bool(input(" is it overseas --?"))
-
-a = ( weight * 2.50 )
-b = ( distance * 0.15 )
-base_cost =  ( a + b )
-
-print( base_cost)
+is_express = bool(eval(input("Is it by express? -->")))
+is_international = bool(eval(input(" is it overseas --?")))
 
 
-#international
- total = (base_cost * 1.40)
 
-otal1 = (total + 50)
+base_cost = (weight * 2.5) + (distance * .15)
 
-#expressed
-total2 = (base_cost * 120)
-total3 = (total2 + 25)
+if  weight <= 2 and distance <= 100 and is_express == False and is_international == False :
+	print("Free Shipping!")
+	Total = 0
+	
+elif is_international == True and is_express == True :
+	print("Package is International is applied")
+	Total = (base_cost * 1.4) + 50
 
-#oversized
-total4 = (base_cost + 30)
+elif is_express == True or (is_international == True and weight > 20) : 
+	print("Package is Express or Heavy International is applied")
+	Total = (base_cost * 1.2) + 25
 
-if weight <= 2.0 and distance <= 100:
-   print("free of charge")
-
-elif is_fragile == true and expressed == true:
-	print( total1 and total3)
-
- 
-else:
-   print("Invalid")
+elif weight > 30 or distance > 1000 : 
+	print("Oversized is applied")
+	Total = base_cost + 30
+	
+else :
+	Total = base_cost
+	print("Standard rate is applied")
 
 
+
+
+print("--------------------------")
+print("Name of the sender : ", name)
+print("Type of Item : ", type)
+print("Total Output  : PHP ", Total)
