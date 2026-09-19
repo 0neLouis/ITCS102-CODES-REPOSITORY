@@ -14,16 +14,15 @@ if age >=21 and is_empployed:#tier1
             print("You are qualified for a loan with an interest rate of 4.5%") 
         else:
             print("You are qualified for a loan with an interest rate of 5%")
-if credit_score >= 600 and credit_score < 750:
-    print("You have a medium credit score")
-    if has_collateral == True: #tier2
-        print("you are qualified for a loan with an interest rate of 7%")
-    if annual_income <=40000:
-        print("You are qualified for a loan with an interest rate of 9.5%")
-    else:
-        print("You are qualified for a loan with an interest rate of 8%")
-    if credit_score < 600:#Tier3
-            print("Rejected, Credit score too low")
+    elif credit_score >= 600 and credit_score < 750:
+        print("You have a medium credit score")
+        if has_collateral == True: #tier2
+            print("you are qualified for a loan with an interest rate of 7%")
+        if annual_income <=40000:
+            print("You are qualified for a loan with an interest rate of 9.5%")
+
+    else:#Tier3
+        print("Rejected, Credit score too low")
 else: 
     print("You don't meet the requirements, Try again next time")
 
