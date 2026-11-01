@@ -1,7 +1,7 @@
 ey = int(input(' Input desired number -->'))
 num = 1
-for x in range(ey):
+for x in range(5):
     for y in range(x + 1):
-        print(y, end=" ")
+        print(num, end=" ")
         num += 1
     print()
