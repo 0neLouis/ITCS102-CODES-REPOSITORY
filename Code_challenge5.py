@@ -2,7 +2,7 @@ size = int(input("Input desired size -->"))
 for x in range(size):
     for y in range(size):
         if x + y == size - 1 or x == y:
-            print(" * ", end=" ")
+            print("*", end="")
         else:
-            print(" ", end=" ")        
+            print(" ", end="")        
     print()
