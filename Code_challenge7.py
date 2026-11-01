@@ -1,6 +1,19 @@
-size = int(input(" Input desired size -->"))
-for x in range(size, 20,):
-    for y in range(x):
-        print("*", end=" ")
-    size *= 2
-    print() 
+size = int(input("Input preferred size --> "))
+center = size//2
+
+if center % 2 == 0:
+    size += 1
+
+for x in range(size):
+    for y in range(size):
+        distance = abs(x- center) + abs (y - center)
+        if distance <= center and distance % 2 == center % 2:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+            
+
+
+
+
