@@ -1,4 +1,4 @@
-ey = int(input(' Input desired number -->'))
+ey = int(input('Input desired number -->'))
 num = 1
 for x in range(5):
     for y in range(x + 1):
